@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculator</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/calculate.css?">
+
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="site-title">私のポートフォリオ</div>
+    <nav class="site-nav">
+      <a href="./index.html">ホーム</a>
+      <a href="./2_work.html">課題</a>
+      <a href="./1_contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1 class="page-title">Calculator</h1>
+
+    <section class="calc-card">
+      <label class="label">
+        値1
+        <input class="input" id="num1" type="number" placeholder="例：10" />
+      </label>
+
+      <label class="label">
+        値2
+        <input class="input" id="num2" type="number" placeholder="例：5" />
+      </label>
+
+      <label class="label">
+        演算子
+        <select class="select" id="operator">
+          <option value="+">足し算</option>
+          <option value="-">引き算</option>
+          <option value="*">掛け算</option>
+          <option value="/">割り算</option>
+        </select>
+      </label>
+
+      <button class="btn" id="calcBtn" type="button">計算する</button>
+
+      <div class="result-box">
+        <div class="formula" id="formula">0 + 0</div>
+        <div class="result" id="result">0</div>
+      </div>
+
+      <a class="btn btn-secondary" href="./2_work.html">Back to MyProject</a>
+    </section>
+  </main>
+
+  <script src="./0_calculate.js"></script>
+
+</body>
+</html>
